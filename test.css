@@ -2,3 +2,9 @@ body {
     background-color:#222222;
     color: white;
 }
+
+#card-container{
+    width: 512px;
+    height:256px;
+    background-color:#111111;
+}
