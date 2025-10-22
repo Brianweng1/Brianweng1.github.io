@@ -26,8 +26,9 @@ margin-top: 60px;
 position: relative;
 z-index: 1;
 }
+
 #hero h1 {
-font-size: 3px; /* Changed rem into px. rem isn't an atribute for font size.*/
+font-size: 30px; /* Changed rem into px. rem isn't an atribute for font size. Also made the font size larger, 3 pixels can barely be seen.*/
 margin-bottom: 10px;
 }
 
