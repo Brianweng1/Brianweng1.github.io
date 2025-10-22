@@ -11,7 +11,7 @@ width: 100%;
 background-color: #3a7ca5;
 color: white;
 padding: 10px 0;
-z-index: 100px; /* Added px for a value. This allows the computer to recognise the value*/
+z-index: 100; 
 display: flex;
 justify-content: space-around;
 align-items: center;
