@@ -22,7 +22,7 @@ text-align: center;
 background: #c8e8f3;
 color: #2b6777;
 padding: 140px 20px 80px;
-margin-top: 60px;
+margin-top: 0; /* got rid of the padding, the padding was blocking the view of the website. The original video didn't have a gap inbetween the element and hte top.*/
 position: relative;
 z-index: 1;
 }
