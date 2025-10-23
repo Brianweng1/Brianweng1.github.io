@@ -61,9 +61,9 @@ position: absolute;
 top: 10px;
 right: 20px;
 background-color: #9cd0ff;
-padding: 10png;
+padding: 10px; /*Change the atribute png into px. The computer doesen't recognise png. It recognises px as an atribute for padding*/
 border-radius: 6px;
-with: 45%;
+width: 45%; /*Change the word with into width. With is not an atribute but width is.*/
 box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
