@@ -36,7 +36,7 @@ margin-bottom: 10px;
 font-size: 1.2rem;
 }
 
-#section { /* Changed . to #. This is because that that the # calls upon the <div> tag. The dot doesen't.*/
+.section { 
 margin: 60px auto;
 width: 80%;
 max-width: 900px;
@@ -48,7 +48,7 @@ box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 position: relative;
 }
 
-#parent-box { /* Changed . to #. This is because that that the # calls upon the <div> tag. The dot doesen't.*/
+.parent-box { 
 position: relative; /* added ; to indicate the end of the line.*/
 background-color: #d8efff;
 padding: 30px;
