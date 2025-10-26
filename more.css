@@ -10,7 +10,8 @@ position: fixed;
 width: 100%;
 background-color: #3a7ca5;
 color: white;
-padding: 0 0; /* got rid of the padding, the padding was blocking the view of the website. The original video didn't have a gap inbetween the element and hte top.*/
+margin: 0; /* Added a margin to make the navbar directly on the top of the screen without any gaps.*/
+padding: 0 ; /* got rid of the padding, the padding was blocking the view of the website. The original video didn't have a gap inbetween the element and hte top.*/
 z-index: 100; 
 display: flex;
 justify-content: space-around;
