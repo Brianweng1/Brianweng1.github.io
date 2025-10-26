@@ -10,7 +10,9 @@ position: fixed;
 width: 100%;
 background-color: #3a7ca5;
 color: white;
-top: 0;
+top: 0; /*added top to get rid of the 8px that was above the navbar. The left and right were also added to make sure the navbar didn't move to the right.*/
+left: 8px;
+right: -8px;
 padding: 0 ; /* got rid of the padding, the padding was blocking the view of the website. The original video didn't have a gap inbetween the element and hte top.*/
 z-index: 100; 
 display: flex;
