@@ -8,7 +8,7 @@
 </head>
 <body>
 <div id="navbar">
-    <h2>🐘 Elephants<h2>
+    <h2>🐘 Elephants</h2> <!--Added the / to indacate the end of the h2 tag.-->
     <h2> Brian Weng</h2>
 </div>
 
@@ -28,20 +28,19 @@
 
 <div class="parent-box">
     <p>This light blue box is the parent element.</p>
+ <div class="child-box">
+    <p>This smaller box is <strong>positioned absolutely</strong> inside its parent.</p> <!-- Added the child box inside the parent box. This is how the child box nests itself inside the parent box.-->
+ </div>
 </div> <!--added ending </div> tag to indicate ending of this container.-->
-
-<div class="child-box">
-    <p>This smaller box is <strong>positioned absolutely</strong> inside its parent.</p>
-</div>
 
 <div class="section">
     <h2 class="sticky-title">Types of Elephants</h2>
     <p>There are three main species of elephants — each adapted to its own habitat:</p>
-    <li> <!--Changed the <ul> tag into a <li> tag. This list is not an unordered list.-->
+    <ul> 
         <li><strong>African Savannah Elephant:</strong> Found in open grasslands.</li>
         <li><strong>African Forest Elephant:</strong> Smaller, lives in dense forests.</li>
         <li><strong>Asian Elephant:</strong> Found across South and Southeast Asia.</li>
-    </li>
+    </ul> <!-- Changed the Li into Ul, the li tags have to be inside the ul tags so that the computer can read it properly.-->
 </div> <!--added ending </div> tag to indicate ending of this container.-->
 <div class="info-box">
     <p><strong>Fun fact: Elephant ears help regulate body temperature!</strong></p> <!--added ending </strong> tag to indicate ending of the bold text.-->
@@ -56,7 +55,7 @@
 </div>
 </div>
 
-<div id="footer"
+<div id="footer"> <!-- Added the > element to indacate the ending of the starting div tag. If this wasn't closed, everything below it would be part of the name.-->
     <p>© 2025 Elephants of the World</p>
 </div>
 </html>
