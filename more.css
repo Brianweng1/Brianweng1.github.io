@@ -1,6 +1,7 @@
 body {
 font-family: "Segoe UI", sans-serif;
 background-color: #f5f9fc;
+margin: 0; /* Got rid of the defalt 8 px margin*/
 color: #333;
 
 }
