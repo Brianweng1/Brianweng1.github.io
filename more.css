@@ -103,6 +103,9 @@ background-color: #3a7ca5;
 color: white;
 text-align: center; 
 padding: 20px; 
+bottom: 0;
+left: 0;
+Right: 0;
 position: relative;
 z-index: 10; /*Added a colon to make to value work. Without the colon, the computer wouldn't recognise it*/
 } /* added the } element to end off the fotter css*/
