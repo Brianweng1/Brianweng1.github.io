@@ -11,8 +11,8 @@ width: 100%;
 background-color: #3a7ca5;
 color: white;
 top: 0; /*added top to get rid of the 8px that was above the navbar. The left and right were also added to make sure the navbar didn't move to the right.*/
-left: 8px;
-right: -8px;
+left: 0;
+right: 0;
 padding: 0 ; /* got rid of the padding, the padding was blocking the view of the website. The original video didn't have a gap inbetween the element and hte top.*/
 z-index: 100; 
 display: flex;
@@ -102,7 +102,7 @@ margin-top: 10px;
 background-color: #3a7ca5;
 color: white;
 text-align: center; 
-padding: 0; /*There shouldn't be a space below the footer. Changed the 20 px into 0*/
+padding: 20px; 
 position: relative;
 z-index: 10; /*Added a colon to make to value work. Without the colon, the computer wouldn't recognise it*/
 } /* added the } element to end off the fotter css*/
