@@ -13,3 +13,10 @@ body{
   margin-bottom: 25px;
   border-radius: 5px;
 }
+
+.polaroid img{
+  width: 95%;
+  margin: auto;
+  border-radius: 5px;
+  display: block;
+}
