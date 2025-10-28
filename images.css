@@ -1,4 +1,6 @@
 body{
   background-color: blue;
   background-image: url(https://media.tenor.com/_H7kYoh8pVsAAAAM/boom-boom-boom.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
