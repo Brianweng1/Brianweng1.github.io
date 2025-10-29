@@ -29,15 +29,21 @@
         text-decoloration: none;
       }
 
-      ul li a:hover{
+      ul li a:hover:not(.active){
         background-color: white;
+        font-size: larger;
+      }
+
+      ul li a:active{
+        background-color:green;
       }
     </style>
   </head>
   <body>
     <nav>
       <ul>
-        <li><a href="a">Page 1</a></li>
+        <li><a class="active" href="trouble.html">Home</a></li>
+        <li> <a href="a">Page 2</a></li>
         <li> <a href="a">Page 2</a></li>
       </ul>
     </nav>
