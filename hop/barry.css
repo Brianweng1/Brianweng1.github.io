@@ -15,10 +15,9 @@ body{
 }
 
 #nav{
-
   margin: 0;
   padding: 0;
 }
-#nav ul{ 
+#nav ul{  /* Targets Navbar, zomms in onto ul*/
    list-style-type: none;
 }
