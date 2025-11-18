@@ -2,10 +2,13 @@ body{
   background-color:#F5F5DC;
 }
 
-#id{ 
+#logo{ 
   display: flex;
   justify-content: center; 
   align-items: center;     
   height: 200px;          
 }
 
+.centertxt{
+  text-align:center;
+}
