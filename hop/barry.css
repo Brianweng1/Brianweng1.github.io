@@ -13,3 +13,9 @@ body{
 .centertxt{
   text-align:center;
 }
+
+#nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
