@@ -27,6 +27,7 @@ body{
    display: block;
    text-align: center;
    text-decoration: none;
+   margin: 10px;
 }
 
 .nav ul li a:hover{
