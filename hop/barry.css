@@ -20,6 +20,9 @@ body{
 }
 .nav ul{  /* Targets Navbar, zooms in onto ul*/
    list-style-type: none;
+}
+
+.nav ul li a{
    float:left;
    display: block;
    text-align: center;
