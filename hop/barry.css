@@ -19,7 +19,7 @@ body{
   margin: 0 auto;
   padding: 0;
 } */
-.nav ul{  /* Targets Navbar, zooms in onto ul*/
+ ul{  /* Targets Navbar, zooms in onto ul*/
    list-style-type: none;
   margin: 0 auto;
   padding:0;
@@ -27,12 +27,12 @@ body{
   text-align: center;  
 }
 
-.nav ul li{
+ ul li{
   display: inline-block;
   margin: 0 auto;
 }
 
-.nav ul li a{
+ ul li a{
    /* float:left; */
    display: block;
    text-align: center;
