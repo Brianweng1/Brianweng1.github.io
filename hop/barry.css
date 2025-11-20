@@ -2,11 +2,11 @@ body{
   background-color:#F5F5DC;
 }
 
-#logo img{ 
+#logo{ 
   /* display: flex;
   justify-content: center; 
   align-items: center;      */
-  display: block;
+  /* display: block; */
   margin: 0 auto;
   height: 350px; 
 }
@@ -24,17 +24,14 @@ body{
 }
 
 .nav ul li a{
-   float:left;
+   /* float:left; */
    display: block;
    text-align: center;
    text-decoration: none;
-   margin: 10px;
+   margin: 10px auto;
 }
 
-.nav a{
-  display: block;
-  margin: 0 auto;
-}
+
 
 
   
