@@ -31,5 +31,10 @@ body{
    margin: 10px;
 }
 
+.nav a{
+  display: block;
+  margin: 0 auto;
+}
+
 
   
