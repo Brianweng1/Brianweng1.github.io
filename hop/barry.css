@@ -20,4 +20,8 @@ body{
 }
 .nav ul{  /* Targets Navbar, zomms in onto ul*/
    list-style-type: none;
+   float:left;
+   display: block;
+   text-align: center;
+   text-decoration: none;
 }
