@@ -3,9 +3,11 @@ body{
 }
 
 #logo{ 
-  display: flex;
+  /* display: flex;
   justify-content: center; 
-  align-items: center;     
+  align-items: center;      */
+  display: block;
+  margin: 0 auto;
   height: 350px; 
 }
 
