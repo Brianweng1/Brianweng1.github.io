@@ -7,7 +7,6 @@ body{
   justify-content: center; 
   align-items: center;     
   height: 350px; 
-  margin: 50px , 0px, 50px, 50px;
 }
 
 .centertxt{
@@ -30,7 +29,5 @@ body{
    margin: 10px;
 }
 
-.nav ul li a:hover{
-  background-color:blue;
-}
+
   
