@@ -21,11 +21,19 @@ body{
 }
 .nav ul{  /* Targets Navbar, zooms in onto ul*/
    list-style-type: none;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+  
+}
+
+.nav ul li{
+  margin: 0 auto;
 }
 
 .nav ul li a{
    /* float:left; */
-   display: inline-block;
+   display: block;
    text-align: center;
    text-decoration: none;
    margin: 10px auto;
