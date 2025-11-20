@@ -6,7 +6,7 @@ body{
   /* display: flex;
   justify-content: center; 
   align-items: center;      */
-  /* display: block; */
+  display: block;
   margin: 0 auto;
   height: 350px; 
 }
@@ -25,7 +25,7 @@ body{
 
 .nav ul li a{
    /* float:left; */
-   display: block;
+   display: inline-block;
    text-align: center;
    text-decoration: none;
    margin: 10px auto;
