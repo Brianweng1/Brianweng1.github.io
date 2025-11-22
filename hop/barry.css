@@ -34,6 +34,10 @@ body{
    margin: 10px auto;
 }
 
+#bottom{
+  background:cover;
+  bottom:0;
+}
 
 
 
