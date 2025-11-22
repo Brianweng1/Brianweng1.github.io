@@ -3,9 +3,6 @@ body{
 }
 
 #logo{ 
-  /* display: flex;
-  justify-content: center; 
-  align-items: center;      */
   display: block;
   margin: 0 auto;
   height: 350px; 
@@ -15,10 +12,7 @@ body{
   text-align:center;
 }
 
-/* .nav{
-  margin: 0 auto;
-  padding: 0;
-} */
+
  ul{  /* Targets Navbar, zooms in onto ul*/
    list-style-type: none;
   margin: 0 auto;
@@ -33,7 +27,6 @@ body{
 }
 
  ul li a{
-   /* float:left; */
    display: block;
    text-align: center;
    text-decoration: none;
