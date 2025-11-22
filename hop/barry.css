@@ -51,5 +51,11 @@ body{
   margin:0;
 }
 
+footer pre {
+    margin: 0;      
+    padding: 0;      
+}
+
+
 
   
