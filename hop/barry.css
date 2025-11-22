@@ -35,8 +35,10 @@ body{
 }
 
 #bottom{
-  background:cover;
-  bottom:0;
+  height:450px;                
+  background-size: cover;       
+  background-position: bottom;  
+  background-repeat: no-repeat;
 }
 
 
