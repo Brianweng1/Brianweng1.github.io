@@ -44,6 +44,11 @@ body{
   background-repeat: no-repeat;
 }
 
+.bottom img {
+    margin:0;
+  padding:0;
+}
+
 .footer{
   background-color:black;
   color:white;
