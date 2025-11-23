@@ -17,11 +17,6 @@ body{
 }
 
 
-
-
- 
-
-
  ul{  /* Targets Navbar, zooms in onto ul*/
    list-style-type: none;
   margin: 0 auto;
@@ -29,6 +24,7 @@ body{
   overflow: hidden;
   text-align: center;  
   color: black;
+  position:fixed;
   font-family: 'Oswald', sans-serif;
 }
 
