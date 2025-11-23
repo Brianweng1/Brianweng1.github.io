@@ -2,6 +2,7 @@ body{
   background-color:#F5F5DC;
   margin:0;
   padding:0;
+  overflow-x: hidden;
 }
 
 #logo{ 
@@ -37,19 +38,22 @@ body{
 }
 
 .bottom{
-  width:966.4px;
-  height:auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   background-size: contain;       
   background-position: bottom;  
   background-repeat: no-repeat;
 }
 
 .bottom img {
+  width: 100%;
+  height: auto;
   display: block;  
   margin:0;
   padding:0;
 }
-
+ 
 .footer {
   background-color: black;
   color: white;
