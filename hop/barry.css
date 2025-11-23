@@ -19,44 +19,7 @@ body{
 
 
 
-.navbar {
-  background-color: #f5f5dc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  margin-left: 20px;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Oswald', sans-serif;
-}
-
-/* Hide checkbox and hamburger by default on desktop */
-#menu-toggle {
-  display: none;
-}
-
-.menu-icon {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-} 
-
-
-
+ 
 
 
  ul{  /* Targets Navbar, zooms in onto ul*/
@@ -65,11 +28,15 @@ body{
   padding:0;
   overflow: hidden;
   text-align: center;  
+  color: black;
+  font-family: 'Oswald', sans-serif;
 }
 
  ul li{
   display: inline-block;
   margin: 0 auto;
+  color: black;
+  font-family: 'Oswald', sans-serif;
 }
 
  ul li a{
@@ -77,6 +44,8 @@ body{
    text-align: center;
    text-decoration: none;
    margin: 10px auto;
+   color: black;
+   font-family: 'Oswald', sans-serif;
 }
 
 .bottom{
