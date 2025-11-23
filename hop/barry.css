@@ -37,8 +37,8 @@ body{
 }
 
 .bottom{
-  height:1000px; 
-  width:auto;
+  width:100%;
+  height:auto;
   background-size: cover;       
   background-position: bottom;  
   background-repeat: no-repeat;
