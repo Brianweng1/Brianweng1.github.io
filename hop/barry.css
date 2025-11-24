@@ -136,6 +136,7 @@ pre{
 .Larry img {
     max-width: 300px;   
     height: auto;
+    object-fit: cover;
 }
 
   
