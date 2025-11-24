@@ -125,18 +125,21 @@ pre{
     height: auto;
 }
 
-  .Larry {
-    display: flex;                   
-    justify-content: space-between;  
-    align-items: center;           
-    flex-wrap: wrap;              
+.Larry {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;  
+    flex-wrap: wrap;
+    gap: 20px; 
     margin: 20px;
 }
 
 .Larry img {
-    max-width: 300px;   
-    height: auto;
-    object-fit: cover;
+    flex: 1;               
+    height: 250px;         
+    object-fit: cover;     
+    width: 100%;          
 }
+
 
   
