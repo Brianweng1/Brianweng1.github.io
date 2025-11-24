@@ -125,7 +125,7 @@ pre{
     height: auto;
 }
 
-  .larry {
+  .Larry {
     display: flex;                   
     justify-content: space-between;  
     align-items: center;           
@@ -133,7 +133,7 @@ pre{
     margin: 20px;
 }
 
-.larry img {
+.Larry img {
     max-width: 30%;   
     height: auto;
 }
