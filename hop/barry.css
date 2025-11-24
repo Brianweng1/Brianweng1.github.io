@@ -126,16 +126,17 @@ pre{
     height: auto;
 }
 
-  .larry {
-    display: grid; /* arranges in grid*/
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    gap: 20px;                             
-    margin: 20px;
-}
+  /* .larry { */
+    /* display: grid; /* arranges in grid*/ */
+    /* grid-template-columns: repeat(3, 1fr); /* 3 equal columns */ */
+    /* gap: 20px;                             
+    margin: 20px; */
+/* } */
 
 .larry img {
-    height: 1000px;
-    width: 1000px;
+    height: 200px;
+    width: auto;
+    object-fit: cover;
 }
 
 .btn {
