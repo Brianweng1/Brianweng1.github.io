@@ -5,6 +5,10 @@ body{
   overflow-x: hidden;
 }
 
+h1{
+  font-size:45px
+}
+
 #logo{ 
   display: block;
   margin: 0 auto;
@@ -98,7 +102,7 @@ pre{
     align-items: center;       
     justify-content: space-between; 
     flex-wrap: wrap;         
-    margin: 10px;              
+    margin: 20px;              
 
 .leftxt {
     flex: 1;                 
