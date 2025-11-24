@@ -125,7 +125,7 @@ pre{
     height: auto;
 }
 
-.Larry {
+/* .Larry {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -145,7 +145,22 @@ pre{
     height: 100%;
     object-fit: cover;       
     display: block;
+} */
+
+  .Larry {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px;                              /* space between images */
+    margin: 20px;
 }
+
+.Larry img {
+    width: 100%;
+    aspect-ratio: 1 / 1;   /* makes all images square */
+    object-fit: cover;      /* crops images to fit square */
+    display: block;
+}
+
 
 
   
