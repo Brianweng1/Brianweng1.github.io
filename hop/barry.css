@@ -125,4 +125,17 @@ pre{
     height: auto;
 }
 
+  .larry {
+    display: flex;                   
+    justify-content: space-between;  
+    align-items: center;           
+    flex-wrap: wrap;              
+    margin: 20px;
+}
+
+.larry img {
+    max-width: 30%;   
+    height: auto;
+}
+
   
