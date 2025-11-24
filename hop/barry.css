@@ -140,6 +140,7 @@ pre{
     margin:20px;
     padding:15px;
     overflow: hidden;
+    display:block;
 }
 
 .button{
