@@ -128,17 +128,23 @@ pre{
 .Larry {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;  
     flex-wrap: wrap;
     gap: 20px; 
     margin: 20px;
 }
 
-.Larry img {
+.Larry-item {
     flex: 1;               
-    height: 250px;         
-    object-fit: cover;     
-    width: 100%;          
+    max-width: 30%;             
+    height: 250px;            
+    overflow: hidden;        
+}
+
+.Larry-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       
+    display: block;
 }
 
 
