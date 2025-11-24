@@ -17,6 +17,10 @@ body{
   text-align:center;
 }
 
+.leftxt{
+  font-family: 'Oswald', sans-serif;
+  text-align:left;
+}
 
  ul{  /* Targets Navbar, zooms in onto ul*/
    list-style-type: none;
