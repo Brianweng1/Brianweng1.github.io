@@ -163,8 +163,9 @@ pre{
 }
 
 .button{
-  height:175px;
-  width:auto;
+ width:200px;
+ height:30px;
+ margin:10px;
 }
 
   
