@@ -140,7 +140,8 @@ pre{
     overflow: hidden;
 }
 
-.btn {
+.button{
+  width:auto;
   display: inline-block;
   padding: 10px 20px;
   background-color: #ff6666;
@@ -149,6 +150,7 @@ pre{
   border-radius: 6px;
 }
 
+ 
 
 
 
