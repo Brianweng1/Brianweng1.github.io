@@ -17,12 +17,6 @@ body{
   text-align:center;
 }
 
-.leftxt{
-  font-family: 'Oswald', sans-serif;
-  text-align:left;
-   margin-left:35px;
-}
-
  ul{  /* Targets Navbar, zooms in onto ul*/
    list-style-type: none;
   margin: 0 auto;
@@ -97,6 +91,15 @@ pre{
   margin: 0 auto;
   height:350px;
   width: auto;
+}
+
+
+
+
+.leftxt{
+  font-family: 'Oswald', sans-serif;
+  text-align:left;
+   margin-left:35px;
 }
 
 .rightimg{
