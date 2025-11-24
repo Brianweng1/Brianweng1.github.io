@@ -93,18 +93,27 @@ pre{
   width: auto;
 }
 
+.row {
+    display: flex;             
+    align-items: center;       
+    justify-content: space-between; 
+    flex-wrap: wrap;         
+    margin: 20px;              
 
-
-
-.leftxt{
-  font-family: 'Oswald', sans-serif;
-  text-align:left;
-   margin-left:35px;
+.leftxt {
+    flex: 1;                 
+    margin-right: 20px;         
+    font-family: 'Oswald', sans-serif;
 }
 
-.rightimg{
-  position:right;
+.rightimg {
+    flex: 1;                    
+    text-align: center;        
 }
 
+.rightimg img {
+    max-width: 100%;           
+    height: auto;
+}
 
   
