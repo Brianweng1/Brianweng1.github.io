@@ -23,8 +23,11 @@ p{
 #logo{ 
   display: block;
   margin: 0 auto;
-  margin-top: 67px;
   height: 350px; 
+}
+
+#logo img{
+  margin-top:67px;
 }
 
 .centertxt{
