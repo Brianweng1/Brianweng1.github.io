@@ -6,16 +6,19 @@ body{
   overflow-x: hidden;
 }
 
+/* makes the nav bar's font larger */
 .nav{
   font-size:35px;
   margin:20px;
   
 }
 
+/* Makes h1 font larger */
 h1{
   font-size:45px;
 }
 
+/* makes p tag font larger */
 p{
   font-size:20px;
 }
@@ -26,10 +29,12 @@ p{
   height: 350px; 
 }
 
+/* targets the imgage in the logo */
 #logo img{
   margin-top:67px;
 }
 
+/* things with this class will have their words centered */
 .centertxt{
   font-family: 'Oswald', sans-serif;
   text-align:center;
@@ -58,7 +63,6 @@ p{
 }
 
  ul li a{
-   /* display: block; */
    text-align: center;
    text-decoration: none;
    margin: 10px auto;
@@ -89,7 +93,8 @@ ul li a:hover {
   margin:0;
   padding:0;
 }
- 
+
+/* targets the footer */
 .footer {
   background-color: black;
   color: white;
@@ -111,6 +116,7 @@ pre{
     padding: 0;      
 }
 
+/* centers images */
 .centerimg{
   display:block;
   margin: 0 auto;
@@ -126,6 +132,8 @@ pre{
     margin: 20px;  
     gap: 10px;
 }
+
+/* positions text to the left */
 .leftxt {
     flex: 1;                 
     margin-right: 20px;         
@@ -133,6 +141,7 @@ pre{
     font-size:30px;
 }
 
+/* positions images to the right */
 .rightimg {
     flex: 1;                    
     text-align: center;        
