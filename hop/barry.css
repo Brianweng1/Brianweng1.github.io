@@ -5,6 +5,10 @@ body{
   overflow-x: hidden;
 }
 
+.nav{
+  font-size:35px;
+}
+
 h1{
   font-size:45px;
 }
