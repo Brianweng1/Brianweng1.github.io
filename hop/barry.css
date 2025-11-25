@@ -54,7 +54,7 @@ p{
 }
 
  ul li a{
-   display: block;
+   /* display: block; */
    text-align: center;
    text-decoration: none;
    margin: 10px auto;
