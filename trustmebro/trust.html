@@ -19,7 +19,7 @@
       <br><br>
       <strong>Do NOT follow, act on, or rely on anything said on this website.</strong>
     </p>
-   <button type="button" onclick="acceptTerms()">I Agree</button>
+    <button id="agreeButton">I Agree</button>
   </div>
 </div>
 
@@ -53,5 +53,12 @@
 </div>
 
 <script src="script.js"></script>
+<script>
+  // Connect the agree button properly
+  document.getElementById("agreeButton").addEventListener("click", function() {
+    const modal = document.getElementById("termsModal");
+    modal.style.display = "none";
+  });
+</script>
 </body>
 </html>
