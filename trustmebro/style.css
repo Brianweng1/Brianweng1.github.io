@@ -1,9 +1,5 @@
 /* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin:0; padding:0; box-sizing:border-box; }
 
 body {
   font-family: Arial, sans-serif;
@@ -15,10 +11,9 @@ body {
   padding: 10px;
 }
 
-/* Chat container */
 .chat-container {
   width: 100%;
-  max-width: 400px; /* max width for large screens */
+  max-width: 400px;
   background: white;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -27,7 +22,6 @@ body {
   overflow: hidden;
 }
 
-/* Header */
 .chat-header {
   padding: 12px;
   background: #4a6cf7;
@@ -35,7 +29,6 @@ body {
   text-align: center;
 }
 
-/* Avatar */
 .avatar-section {
   display: flex;
   justify-content: center;
@@ -50,7 +43,6 @@ body {
   object-fit: cover;
 }
 
-/* Chat area */
 .chat-box {
   padding: 10px;
   height: 300px;
@@ -60,7 +52,6 @@ body {
   flex-direction: column;
 }
 
-/* Messages */
 .message {
   margin: 5px 0;
   padding: 8px 12px;
@@ -69,19 +60,9 @@ body {
   word-wrap: break-word;
 }
 
-.user {
-  background: #4a6cf7;
-  color: white;
-  align-self: flex-end;
-}
+.user { background: #4a6cf7; color: white; align-self: flex-end; }
+.bot  { background: #ddd; color: black; align-self: flex-start; }
 
-.bot {
-  background: #ddd;
-  color: black;
-  align-self: flex-start;
-}
-
-/* Input */
 .chat-input {
   display: flex;
   border-top: 1px solid #ccc;
@@ -104,19 +85,14 @@ body {
   font-size: 16px;
 }
 
-/* Modal */
 .modal {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   background: rgba(0,0,0,0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; justify-content: center; align-items: center;
   z-index: 10000;
-  padding: 10px; /* allow some spacing on small screens */
+  padding: 10px;
 }
 
 .modal-content {
@@ -138,19 +114,9 @@ body {
   border-radius: 5px;
 }
 
-/* Responsive tweaks */
+/* Responsive */
 @media screen and (max-width: 400px) {
-  .chat-box {
-    height: 250px;
-  }
-
-  .avatar-section img {
-    width: 70px;
-    height: 70px;
-  }
-
-  .chat-input input, .chat-input button {
-    font-size: 14px;
-    padding: 8px;
-  }
+  .chat-box { height: 250px; }
+  .avatar-section img { width: 70px; height: 70px; }
+  .chat-input input, .chat-input button { font-size: 14px; padding: 8px; }
 }
