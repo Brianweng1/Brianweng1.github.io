@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Satire Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Terms & Agreement Modal -->
+<div id="termsModal" class="modal">
+  <div class="modal-content">
+    <h2>Terms & Agreement</h2>
+    <p>
+      This website is created for <strong>satire and educational purposes only</strong>.
+    </p>
+    <p>
+      The character gives <strong>intentionally bad and fictional advice</strong>.
+      <br><br>
+      <strong>Do NOT follow, act on, or rely on anything said on this website.</strong>
+    </p>
+    <button onclick="acceptTerms()">I Agree</button>
+  </div>
+</div>
+
+<!-- Chat App -->
+<div class="chat-container">
+
+  <!-- Header -->
+  <div class="chat-header">
+    <h2>Definitely Helpful Person</h2>
+  </div>
+
+  <!-- Avatar -->
+  <div class="avatar-section">
+    <img src="person.png" alt="Avatar">
+  </div>
+
+  <!-- Chat -->
+  <div class="chat-box" id="chatBox">
+    <div class="message bot">
+      ⚠️ This character gives bad advice on purpose.<br>
+      Ask me anything.
+    </div>
+  </div>
+
+  <!-- Input -->
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type a message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
