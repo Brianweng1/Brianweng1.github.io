@@ -4,7 +4,9 @@ window.onload = function () {
 };
 
 function acceptTerms() {
-  document.getElementById("termsModal").style.display = "none";
+  const modal = document.getElementById("termsModal");
+  modal.style.display = "none";
+  modal.remove(); // ensures nothing blocks clicks
 }
 
 function sendMessage() {
