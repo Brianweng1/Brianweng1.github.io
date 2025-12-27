@@ -1,3 +1,110 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+/* Chat container */
+.chat-container {
+  width: 100%;
+  max-width: 400px; /* max width for large screens */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+.chat-header {
+  padding: 12px;
+  background: #4a6cf7;
+  color: white;
+  text-align: center;
+}
+
+/* Avatar */
+.avatar-section {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background: #eef1f7;
+}
+
+.avatar-section img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Chat area */
+.chat-box {
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+  background: #eef1f7;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Messages */
+.message {
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user {
+  background: #4a6cf7;
+  color: white;
+  align-self: flex-end;
+}
+
+.bot {
+  background: #ddd;
+  color: black;
+  align-self: flex-start;
+}
+
+/* Input */
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.chat-input button {
+  padding: 10px 16px;
+  border: none;
+  background: #4a6cf7;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Modal */
 .modal {
   position: fixed;
   top: 0;
@@ -8,13 +115,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10000; /* very high so nothing overlaps */
+  z-index: 10000;
+  padding: 10px; /* allow some spacing on small screens */
 }
 
 .modal-content {
   background: white;
   padding: 20px;
-  width: 320px;
+  width: 100%;
+  max-width: 350px;
   border-radius: 10px;
   text-align: center;
 }
@@ -27,4 +136,21 @@
   color: white;
   cursor: pointer;
   border-radius: 5px;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 400px) {
+  .chat-box {
+    height: 250px;
+  }
+
+  .avatar-section img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .chat-input input, .chat-input button {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
