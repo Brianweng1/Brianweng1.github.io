@@ -27,12 +27,13 @@ body {
 }
 
 .chat-header {
-  padding: 12px;
+  padding: 12px 90px; /* reserves space for buttons */
   background: #4a6cf7;
   color: white;
   text-align: center;
   position: relative;
 }
+
 
 .about-link {
   position: absolute;
