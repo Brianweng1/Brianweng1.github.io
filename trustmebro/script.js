@@ -1,8 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
+  
+  console.log("Script loaded!");
 
   // =====================
-  // Doctor Busy Check (NEW FEATURE)
+  // Get all modal elements first
   // =====================
+  const modal = document.getElementById("termsModal");
+  const agreeButton = document.getElementById("agreeButton");
+  const busyModal = document.getElementById("busyModal");
+  const timerDisplay = document.getElementById("timerDisplay");
+  const devKeyInput = document.getElementById("devKeyInput");
+  const devKeySubmit = document.getElementById("devKeySubmit");
+  const chatBox = document.getElementById("chatBox");
+  const input = document.getElementById("userInput");
+  const sendBtn = document.getElementById("sendBtn");
+
+  console.log("Elements found:", {
+    modal: !!modal,
+    agreeButton: !!agreeButton,
+    busyModal: !!busyModal,
+    chatBox: !!chatBox
+  });
   let countdownInterval = null;
 
   function formatTime(ms) {
@@ -48,11 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Developer key submission
-  const busyModal = document.getElementById("busyModal");
-  const timerDisplay = document.getElementById("timerDisplay");
-  const devKeyInput = document.getElementById("devKeyInput");
-  const devKeySubmit = document.getElementById("devKeySubmit");
-
   devKeySubmit.onclick = () => {
     const key = devKeyInput.value.trim();
     if (key === "Cookie") {
@@ -97,8 +110,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
     
-    // 25% chance doctor becomes busy
-    if (Math.random() < 0.25) {
+    // 67% chance doctor becomes busy
+    if (Math.random() < 0.67) {
       // Random time between 5 minutes (300000ms) and 1 hour (3600000ms)
       const minTime = 300000;   // 5 minutes
       const maxTime = 3600000;  // 1 hour
@@ -205,16 +218,9 @@ document.addEventListener("DOMContentLoaded", function () {
   let awaitingRobotCheck = false;
   let awaitingFollowUp = false;
 
-  const chatBox = document.getElementById("chatBox");
-  const input = document.getElementById("userInput");
-  const sendBtn = document.getElementById("sendBtn");
-
   // =====================
-  // Modal
+  // Terms Modal Handler
   // =====================
-  const modal = document.getElementById("termsModal");
-  const agreeButton = document.getElementById("agreeButton");
-  
   if (agreeButton) {
     agreeButton.onclick = () => {
       console.log("I Agree clicked!");
