@@ -1,6 +1,125 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   // =====================
+  // Doctor Busy Check (NEW FEATURE)
+  // =====================
+  let countdownInterval = null;
+
+  function formatTime(ms) {
+    const totalSeconds = Math.floor(ms / 1000);
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+    
+    if (hours > 0) {
+      return `${hours}h ${minutes}m ${seconds}s`;
+    } else if (minutes > 0) {
+      return `${minutes}m ${seconds}s`;
+    } else {
+      return `${seconds}s`;
+    }
+  }
+
+  function startCountdown(busyUntil) {
+    // Clear any existing countdown
+    if (countdownInterval) {
+      clearInterval(countdownInterval);
+    }
+
+    function updateTimer() {
+      const now = Date.now();
+      const remaining = busyUntil - now;
+
+      if (remaining <= 0) {
+        // Time's up!
+        clearInterval(countdownInterval);
+        localStorage.removeItem('doctorBusyUntil');
+        busyModal.style.display = "none";
+        input.disabled = false;
+        sendBtn.disabled = false;
+        askNextQuestion();
+      } else {
+        timerDisplay.textContent = formatTime(remaining);
+      }
+    }
+
+    updateTimer();
+    countdownInterval = setInterval(updateTimer, 1000);
+  }
+
+  // Developer key submission
+  const busyModal = document.getElementById("busyModal");
+  const timerDisplay = document.getElementById("timerDisplay");
+  const devKeyInput = document.getElementById("devKeyInput");
+  const devKeySubmit = document.getElementById("devKeySubmit");
+
+  devKeySubmit.onclick = () => {
+    const key = devKeyInput.value.trim();
+    if (key === "Cookie") {
+      // Override - clear everything
+      clearInterval(countdownInterval);
+      localStorage.removeItem('doctorBusyUntil');
+      busyModal.style.display = "none";
+      input.disabled = false;
+      sendBtn.disabled = false;
+      devKeyInput.value = "";
+      askNextQuestion();
+    } else {
+      alert("Incorrect developer key!");
+      devKeyInput.value = "";
+    }
+  };
+
+  // Allow Enter key for dev key
+  devKeyInput.addEventListener("keypress", e => {
+    if (e.key === "Enter") {
+      devKeySubmit.click();
+    }
+  });
+
+  function checkDoctorAvailability() {
+    const now = Date.now();
+    const busyUntil = localStorage.getItem('doctorBusyUntil');
+    
+    // If doctor is currently busy, check if time has passed
+    if (busyUntil) {
+      const busyTime = parseInt(busyUntil);
+      if (now < busyTime) {
+        // Still busy - show popup with countdown
+        busyModal.style.display = "flex";
+        input.disabled = true;
+        sendBtn.disabled = true;
+        startCountdown(busyTime);
+        return false;
+      } else {
+        // Time has passed, doctor is available again
+        localStorage.removeItem('doctorBusyUntil');
+      }
+    }
+    
+    // 25% chance doctor becomes busy
+    if (Math.random() < 0.25) {
+      // Random time between 5 minutes (300000ms) and 1 hour (3600000ms)
+      const minTime = 300000;   // 5 minutes
+      const maxTime = 3600000;  // 1 hour
+      const randomWaitTime = Math.floor(Math.random() * (maxTime - minTime + 1)) + minTime;
+      
+      const busyUntilTime = now + randomWaitTime;
+      localStorage.setItem('doctorBusyUntil', busyUntilTime.toString());
+      
+      // Show popup with countdown
+      busyModal.style.display = "flex";
+      input.disabled = true;
+      sendBtn.disabled = true;
+      startCountdown(busyUntilTime);
+      return false;
+    }
+    
+    // Doctor is available!
+    return true;
+  }
+
+  // =====================
   // Avatar Management
   // =====================
   let currentAvatarPack = "normal"; // Can be: "normal", "random1", "random2", "random3", "random4"
@@ -488,7 +607,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return "";
   }
 
-// =====================
+  // =====================
   // Messaging
   // =====================
   function sendMessage() {
@@ -546,8 +665,12 @@ document.addEventListener("DOMContentLoaded", function () {
     currentAvatarPack = savedPack;
   }
 
-  // Start with idle avatar and first question
+  // Start with idle avatar
   setAvatar("idle");
-  askNextQuestion();
+  
+  // Check if doctor is available before starting (NEW!)
+  if (checkDoctorAvailability()) {
+    askNextQuestion();
+  }
 
 });
