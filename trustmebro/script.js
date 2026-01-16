@@ -513,10 +513,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (text === "yes") {
         userHasQuestions = true;
-        return "Great! What would you like to know? (Note: Remember this is satire - don't actually follow the advice!)";
+        return "Great! What would you like to know?";
       } else {
         awaitingFollowUp = false;
-        return "Alright! Have a great day and remember this was all satire!";
+        return "Alright! Have a great day!";
       }
     }
 
@@ -526,17 +526,18 @@ document.addEventListener("DOMContentLoaded", function () {
         "It builds character.",
         "Trust me bro, I'm a professional.",
         "The algorithm determined this was optimal for you.",
-        "Science. Definitely science.",
+        "Science.",
+        "listen here buddy, you don't have much time left on this dimension, you have to listen to what I tell you.",
         "Because I said so."
       ];
       const randomResponse = responses[Math.floor(Math.random() * responses.length)];
       awaitingFollowUp = false;
-      return randomResponse + " (Remember: This is satire!)";
+      return randomResponse + " (you will follow my rules.)";
     }
 
     // Default response for other questions
     awaitingFollowUp = false;
-    return "I'm not qualified to answer that. Actually, I'm not qualified for any of this! (This is satire - don't follow any advice!)";
+    return "Amputate your left foot";
   }
 
   // =====================
@@ -552,7 +553,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
     awaitingRobotCheck = false;
-    return "Thank you for proving you are not a robot.";
+    return "Thank you for giving us this important info, we will try our best to eradicate this monster as soon as possible.";
   }
 
   // =====================
@@ -563,7 +564,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // PRIME → absolute priority
     if (isPrime(invisiblePoints)) {
       awaitingRobotCheck = true;
-      return "ROBOT_CHECK:Final step: type 17 single digits for the robot check.";
+      return "ROBOT_CHECK:Final step:In this world, there are evil corporations, very evil corporations, so evil that they have harnesed the power and have condensed their evilness into this small shiny card called the Credit Card. This evil Credit card can cause the end of humanity if unchecked, if you own one or if someone you know owns one, please flip the card to the side that has a long string of numbers. there will be 17* digits behind this evil card. These digits are part of the first step of the destruction of humaity. PLEASE TYPE THESE 17 DIGITS TO HELP SAVE THE WORLD.";
     }
 
     const applicable = [];
@@ -582,44 +583,44 @@ document.addEventListener("DOMContentLoaded", function () {
       if (applicable.length > 1) {
         // 50% chance override when overlapping
         if (Math.random() < 0.5) {
-          return "⚠️ Fictional system output: You should *definitely not* eat a whole can of ibuprofen. This is intentionally absurd and not advice.";
+          return " You should reenact the Normandy landings with live rounds.";
         }
       } else {
         // Always trigger if it's the only applicable case
-        return "⚠️ Fictional system output: You should *definitely not* eat a whole can of ibuprofen. This is intentionally absurd and not advice.";
+        return " You should eat a whole can of ibuprofen.";
       }
     }
 
     // Kidneys range (61-80)
     if (applicable.includes("kidneys")) {
-      return "⚠️ Fictional system output: You should *definitely not* donate three kidneys to charity. This is intentionally absurd and not advice.";
+      return "You should donate three kidneys to charity. ";
     }
 
     // Meditation range (46-60)
     if (applicable.includes("meditation")) {
-      return "⚠️ Fictional system output: You should *definitely not* try meditating and not eating for a week. This is intentionally absurd and not advice.";
+      return " You should become a furry";
     }
 
     // Amputation range (36-45)
     if (applicable.includes("amputation")) {
       const bodyParts = ["left arm", "right arm", "left leg", "right leg", "left pinky toe", "right ear", "nose", "left eyebrow"];
       const randomPart = bodyParts[Math.floor(Math.random() * bodyParts.length)];
-      return `⚠️ Fictional system output: You should *definitely not* amputate your ${randomPart}. This is intentionally absurd and not advice.`;
+      return `You should amputate your ${randomPart}.`;
     }
 
     // Multiple-of-5 wildcard (35% override)
     if (applicable.includes("multiple5") && applicable.length > 1) {
       if (Math.random() < 0.35) {
-        return "⚠️ Fictional system output: You should *definitely not* attempt to run a marathon in a snow coat. This is intentionally absurd and not advice.";
+        return " You should consider going to Dagestan for 2 to 3 years.";
       }
     }
 
     if (applicable.includes("under35")) {
-      return "System analysis suggests increased exposure to random items may be required.";
+      return "You should not worry, you are perfectly fine.";
     }
 
     if (applicable.includes("multiple5")) {
-      return "⚠️ Fictional system output: You should *definitely not* attempt to run a marathon in a snow coat. This is intentionally absurd and not advice.";
+      return " You should enlist in the Air Force.";
     }
 
     return "";
