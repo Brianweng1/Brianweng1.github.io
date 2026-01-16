@@ -488,7 +488,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return "";
   }
 
-  // =====================
+// =====================
   // Messaging
   // =====================
   function sendMessage() {
@@ -498,8 +498,9 @@ document.addEventListener("DOMContentLoaded", function () {
     appendMessage(text, "user");
     input.value = "";
 
-    // Show thinking avatar (increased delay to 1200ms)
+    // Show thinking avatar and message
     setAvatar("thinking");
+    appendMessage("thinking...", "bot");
 
     setTimeout(() => {
       // Handle follow-up questions
@@ -530,7 +531,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       setAvatar("thought");
       askNextQuestion();
-    }, 1200); // Increased from 400ms to 1200ms
+    }, 1200);
 
   }
 
