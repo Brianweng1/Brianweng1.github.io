@@ -18,21 +18,25 @@ document.addEventListener("DOMContentLoaded", function () {
     randomthink1: document.getElementById("avatarRandomThink1"),
     randomidle1: document.getElementById("avatarRandomIdle1"),
     randomconfused1: document.getElementById("avatarRandomConfused1"),
+    randomthought1: document.getElementById("avatarRandomThought1"),
     
     // Random 2 pack
     randomthink2: document.getElementById("avatarRandomThink2"),
     randomidle2: document.getElementById("avatarRandomIdle2"),
     randomconfused2: document.getElementById("avatarRandomConfused2"),
+    randomthought2: document.getElementById("avatarRandomThought2"),
     
     // Random 3 pack
     randomthink3: document.getElementById("avatarRandomThink3"),
     randomidle3: document.getElementById("avatarRandomIdle3"),
     randomconfused3: document.getElementById("avatarRandomConfused3"),
+    randomthought3: document.getElementById("avatarRandomThought3"),
     
     // Random 4 pack
     randomthink4: document.getElementById("avatarRandomThink4"),
     randomidle4: document.getElementById("avatarRandomIdle4"),
-    randomconfused4: document.getElementById("avatarRandomConfused4")
+    randomconfused4: document.getElementById("avatarRandomConfused4"),
+    randomthought4: document.getElementById("avatarRandomThought4")
   };
 
   function setAvatar(state) {
@@ -54,13 +58,18 @@ document.addEventListener("DOMContentLoaded", function () {
         else if (currentAvatarPack === "random2") avatarKey = "randomthink2";
         else if (currentAvatarPack === "random3") avatarKey = "randomthink3";
         else if (currentAvatarPack === "random4") avatarKey = "randomthink4";
+      } else if (state === "thought") {
+        if (currentAvatarPack === "random1") avatarKey = "randomthought1";
+        else if (currentAvatarPack === "random2") avatarKey = "randomthought2";
+        else if (currentAvatarPack === "random3") avatarKey = "randomthought3";
+        else if (currentAvatarPack === "random4") avatarKey = "randomthought4";
       } else if (state === "confused") {
         if (currentAvatarPack === "random1") avatarKey = "randomconfused1";
         else if (currentAvatarPack === "random2") avatarKey = "randomconfused2";
         else if (currentAvatarPack === "random3") avatarKey = "randomconfused3";
         else if (currentAvatarPack === "random4") avatarKey = "randomconfused4";
       }
-      // thought, diddy, and island stay as normal avatars even in random packs
+      // diddy and island stay as normal avatars even in random packs
     }
     
     // Show the selected avatar
