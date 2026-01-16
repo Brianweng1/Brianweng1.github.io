@@ -498,7 +498,7 @@ document.addEventListener("DOMContentLoaded", function () {
     appendMessage(text, "user");
     input.value = "";
 
-    // Show thinking avatar
+    // Show thinking avatar (increased delay to 1200ms)
     setAvatar("thinking");
 
     setTimeout(() => {
@@ -530,7 +530,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       setAvatar("thought");
       askNextQuestion();
-    }, 400);
+    }, 1200); // Increased from 400ms to 1200ms
+
   }
 
   sendBtn.onclick = sendMessage;
