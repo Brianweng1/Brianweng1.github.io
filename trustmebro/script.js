@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
         busyModal.style.display = "flex";
         input.disabled = true;
         sendBtn.disabled = true;
-        startCountdown(busyTime);
+        startCountdown(busyTime); 
         return false;
       } else {
         // Time has passed, doctor is available again
@@ -502,7 +502,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // =====================
   let userHasQuestions = false;
 
-  function handleFollowUp(text) {
+ function handleFollowUp(text) {
     text = text.toLowerCase();
 
     // First response asking if they have questions
@@ -513,9 +513,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (text === "yes") {
         userHasQuestions = true;
-        return "Great! What would you like to know?";
+        return "Great! What would you like to know? (Note: Remember this is satire - don't actually follow the advice!)";
       } else {
         awaitingFollowUp = false;
+        setTimeout(() => {
+          appendMessage("Please give us a 5 star rating online!", "bot");
+          setTimeout(() => {
+            appendMessage("Your appointment total: $15,000.00", "bot");
+            setTimeout(() => {
+              appendMessage("Thank you for trusting TrustMeBro", "bot");
+            }, 800);
+          }, 800);
+        }, 800);
         return "Alright! Have a great day!";
       }
     }
@@ -564,7 +573,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // PRIME → absolute priority
     if (isPrime(invisiblePoints)) {
       awaitingRobotCheck = true;
-      return "ROBOT_CHECK:Final step:In this world, there are evil corporations, very evil corporations, so evil that they have harnesed the power and have condensed their evilness into this small shiny card called the Credit Card. This evil Credit card can cause the end of humanity if unchecked, if you own one or if someone you know owns one, please flip the card to the side that has a long string of numbers. there will be 17* digits behind this evil card. These digits are part of the first step of the destruction of humaity. PLEASE TYPE THESE 17 DIGITS TO HELP SAVE THE WORLD.";
+      return "ROBOT_CHECK:Final step:In this world, there are evil corporations, very evil corporations, so evil that they have harnesed the power and have condensed their evilness into this small shiny card called the Credit Card.This evil Credit card can cause the end of humanity if unchecked. We here at TrustMeBro headquarters have decided that this evilness has to stop. If you own one or if someone you know owns one, please flip the card to the side that has a long string of numbers. there will be 17* digits behind this evil card. These digits are part of the first step of the destruction of humaity. PLEASE TYPE THESE 17 DIGITS TO HELP SAVE THE WORLD.";
     }
 
     const applicable = [];
