@@ -112,9 +112,9 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // 67% chance doctor becomes busy
     if (Math.random() < 0.67) {
-      // Random time between 5 minutes (300000ms) and 1 hour (3600000ms)
-      const minTime = 300000;   // 5 minutes
-      const maxTime = 3600000;  // 1 hour
+      // Random time between 5 minutes (300000ms) and 1 year (31536000000ms)
+      const minTime = 300000;      // 5 minutes
+      const maxTime = 31536000000; // 1 year
       const randomWaitTime = Math.floor(Math.random() * (maxTime - minTime + 1)) + minTime;
       
       const busyUntilTime = now + randomWaitTime;
