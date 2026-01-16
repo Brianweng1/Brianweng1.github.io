@@ -213,9 +213,21 @@ document.addEventListener("DOMContentLoaded", function () {
   // Modal
   // =====================
   const modal = document.getElementById("termsModal");
-  document.getElementById("agreeButton").onclick = () => {
-    modal.style.display = "none";
-  };
+  const agreeButton = document.getElementById("agreeButton");
+  
+  if (agreeButton) {
+    agreeButton.onclick = () => {
+      console.log("I Agree clicked!");
+      modal.style.display = "none";
+      
+      // AFTER terms are agreed to, check if doctor is busy
+      if (checkDoctorAvailability()) {
+        askNextQuestion();
+      }
+    };
+  } else {
+    console.error("Agree button not found!");
+  }
 
   // Settings Modal
   const settingsModal = document.getElementById("settingsModal");
@@ -668,9 +680,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Start with idle avatar
   setAvatar("idle");
   
-  // Check if doctor is available before starting (NEW!)
-  if (checkDoctorAvailability()) {
-    askNextQuestion();
-  }
+  // Don't check doctor availability on startup - wait for terms agreement first
+  // The check happens in the "I Agree" button click handler
 
 });
