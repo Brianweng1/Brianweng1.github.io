@@ -513,7 +513,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (text === "yes") {
         userHasQuestions = true;
-        return "Great! What would you like to know? (Note: Remember this is satire - don't actually follow the advice!)";
+        return "Great! What would you like to know?";
       } else {
         awaitingFollowUp = false;
         setTimeout(() => {
